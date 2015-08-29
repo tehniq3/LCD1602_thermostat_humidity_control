@@ -158,7 +158,7 @@ EEPROM.write(204,45);   // hass
 EEPROM.write(205,5);    // dehas
 EEPROM.write(206,1);    // is 1 for heater and 0 for cooler
 EEPROM.write(207,1);    // is 1 for dryer and 0 for wetter 
-*/  
+ */
   
 byte tset1 = EEPROM.read(201);
 byte tset2 = EEPROM.read(202);
@@ -200,7 +200,7 @@ delay(250);
  // 9 bit resolution by default 
   // Note the programmer is responsible for the right delay
   // we could do something usefull here instead of the delay
-  int resolution = 11;
+  int resolution = 9;
   sensors.setResolution(resolution);
   delay(750/ (1 << (12-resolution)));
 
@@ -310,9 +310,10 @@ if (meniu == 1) {
   { tes = tes + 0.1;
   delay(250);
   }
-  
-byte tset1 = tes / 256;
-byte tset2 = tes - tset1 * 256;
+
+int tes2 = tes*10;  
+byte tset1 = tes2 / 256;
+byte tset2 = tes2 - tset1 * 256;
 EEPROM.write(201, tset1);  // partea intreaga
 EEPROM.write(202, tset2);   // rest
 
