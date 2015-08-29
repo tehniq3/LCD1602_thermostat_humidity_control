@@ -209,8 +209,8 @@ if ((te <= tes) and (tes - dete <= te))
 
  if (has > hass) 
  {
-if (dry == 1) digitalWrite(temppeste, HIGH); 
-if (dry == 0) digitalWrite(temppeste, LOW); 
+if (dry == 1) digitalWrite(umidpeste, HIGH); 
+if (dry == 0) digitalWrite(umidpeste, LOW); 
 
    lcd.setCursor(10, 1);
 //   lcd.print("OVER ");
@@ -218,8 +218,8 @@ if (dry == 0) digitalWrite(temppeste, LOW);
  } 
  if (has < hass - dehas) 
  {
-if (dry == 0) digitalWrite(temppeste, HIGH); 
-if (dry == 1) digitalWrite(temppeste, LOW); 
+if (dry == 0) digitalWrite(umidpeste, HIGH); 
+if (dry == 1) digitalWrite(umidpeste, LOW); 
    lcd.setCursor(10, 1);
 //   lcd.print("BELOW");
    lcd.print("DRY ");
