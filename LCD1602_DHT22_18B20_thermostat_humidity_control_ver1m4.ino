@@ -200,9 +200,10 @@ delay(250);
  // 9 bit resolution by default 
   // Note the programmer is responsible for the right delay
   // we could do something usefull here instead of the delay
-  int resolution = 9;
+  int resolution = 11;
   sensors.setResolution(resolution);
-  delay(750/ (1 << (12-resolution)));
+//  delay(750/ (1 << (12-resolution)));
+delay(250);
 
 // using DS18B20 ( http://arduinoprojects.ru/2014/08/%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9-%D1%82%D0%B5%D1%80%D0%BC%D0%BE%D1%81%D1%82%D0%B0%D1%82-%D0%BD%D0%B0-arduino-%D0%B8-%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BE%D0%BC-%D1%82%D0%B5%D1%80%D0%BC/ )
 sensors.requestTemperatures(); // запрос на получение температуры
