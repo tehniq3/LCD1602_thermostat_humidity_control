@@ -192,6 +192,11 @@ if (meniu == 0)
    // Reading temperature or humidity 
  has = dht.readHumidity();
 
+ if (digitalRead(BUT3) == LOW) 
+  { meniu = 1;
+  delay(250);
+  }  
+
 /*
  te = dht.readTemperature(); 
 delay(250);
@@ -202,13 +207,38 @@ delay(250);
   // we could do something usefull here instead of the delay
   int resolution = 11;
   sensors.setResolution(resolution);
-//  delay(750/ (1 << (12-resolution)));
-delay(250);
+  delay(250/ (1 << (12-resolution)));
+
+ if (digitalRead(BUT3) == LOW) 
+  { meniu = 1;
+  delay(250);
+  }  
+
+  delay(250/ (1 << (12-resolution)));
+
+ if (digitalRead(BUT3) == LOW) 
+  { meniu = 1;
+  delay(250);
+  }  
+
+  delay(250/ (1 << (12-resolution)));
+
+ if (digitalRead(BUT3) == LOW) 
+  { meniu = 1;
+  delay(250);
+  }  
+
 
 // using DS18B20 ( http://arduinoprojects.ru/2014/08/%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9-%D1%82%D0%B5%D1%80%D0%BC%D0%BE%D1%81%D1%82%D0%B0%D1%82-%D0%BD%D0%B0-arduino-%D0%B8-%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BE%D0%BC-%D1%82%D0%B5%D1%80%D0%BC/ )
 sensors.requestTemperatures(); // запрос на получение температуры
 float te=(sensors.getTempCByIndex(0)); 
 
+  delay(250/ (1 << (12-resolution)));
+
+ if (digitalRead(BUT3) == LOW) 
+  { meniu = 1;
+  delay(250);
+  }  
 
 // part from http://nicuflorica.blogspot.ro/2014/10/ceas-rtc-cu-ds1307-si-date-mediu-cu.html
  lcd.setCursor(0, 0);
