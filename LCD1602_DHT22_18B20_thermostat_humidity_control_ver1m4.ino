@@ -207,21 +207,21 @@ delay(250);
   // we could do something usefull here instead of the delay
   int resolution = 11;
   sensors.setResolution(resolution);
-  delay(250/ (1 << (12-resolution)));
+  delay(150/ (1 << (12-resolution)));
 
  if (digitalRead(BUT3) == LOW) 
   { meniu = 1;
   delay(250);
   }  
 
-  delay(250/ (1 << (12-resolution)));
+  delay(150/ (1 << (12-resolution)));
 
  if (digitalRead(BUT3) == LOW) 
   { meniu = 1;
   delay(250);
   }  
 
-  delay(250/ (1 << (12-resolution)));
+  delay(150/ (1 << (12-resolution)));
 
  if (digitalRead(BUT3) == LOW) 
   { meniu = 1;
