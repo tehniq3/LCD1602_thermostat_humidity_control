@@ -1,6 +1,6 @@
 # LCD1602_thermostat_humidity_control
 original thermostat with humidity control
 
-![schematic](https://scontent.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/11952039_984815331583434_7395977312156659304_n.png?oh=541ecea42fff43432d366d1a279daf7d&oe=5673B274)
+![schematic](http://3.bp.blogspot.com/-tvnJ7hOLMAE/VeBLzTA1zCI/AAAAAAAAOZo/B-0cZQpyY6Q/s1600/thermostat_humidity_control_arduino_dht22_lcd1602_menu_schematic.png)
 
 You can use directly DHT22 module sensor or AM2302 sensor with 4k7 resistor...
