@@ -1,5 +1,5 @@
 /*
-THERMOSTAR with HUMIDITY CONTROL
+THERMOSTAT with HUMIDITY CONTROL
 ver.1m0 - 28.08.2015, Craiova - Romania, Europe, Earth
 ver.1m4 - 29.08.2015
 niq_ro write this sketch using parts of other sketches :)
